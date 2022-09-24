@@ -18,6 +18,7 @@
 
 const ele = document.querySelector(".text-content");
 const noteList = document.getElementById("noteUL");
+const noteAdder = document.querySelector(".add-note");
 
 let noteArray = [];
 let selectedText = "";
@@ -28,7 +29,6 @@ ele.addEventListener("mouseup", () => {
   selectedText = window.getSelection().toString();
 });
 
-const noteAdder = document.querySelector(".add-note");
 
 noteAdder.addEventListener("click", addNote);
 
