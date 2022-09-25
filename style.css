@@ -6,16 +6,20 @@
 
 html{
     font-family: 'Poppins', sans-serif;
+    background-color: #FEFAE0;
 }
+
 
 .main-container{
     width: 90%;
     margin: 0 auto;
 }
-
+h1{
+    color:#D4A373;
+}
 header{
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom:20px;
     text-align: center;
 }
 .main{
@@ -24,10 +28,15 @@ header{
 }
 .left-section{
     width: 20%;
+    margin: none auto;
 }
 .right-section{
     width: 70%;
     margin-left: 30px;
+}
+
+hr{
+    border: 1px solid #FAEDCD ;
 }
 
 .sub-heading-left{
@@ -36,18 +45,51 @@ header{
 }
 
 .btn{
-    padding: 5px 10px;
+    padding: 10px 20px;
+    background-color: #D4A373;
+    border: 1px solid #E9EDC9;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.add-note{
+    padding: 15px 30px;
+}
+li{
+    margin: 10px auto;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    list-style-type: none;
+    cursor: pointer;
+    width: 80%;
+
+}
+li:hover{
+    background-color: #FCF2AF;
+}
+
+.btn:hover{
+    background-color: #C8894C;
 }
 .section{
     padding: 10px;
 }
 .text-content{
     display: inline-block;
-    width: 100%;
+    width: 105%;
     height: 35vw;
     border: 2px solid grey;
     padding: 10px;
 }
+
+.btn-img{
+    width: 30px;
+    height: 30px;
+}
+
 .btn-class{
     display: flex;
     justify-content:center;
@@ -63,14 +105,15 @@ header{
     margin: 15px;
 }
 
+
 .text-content:empty:before {
     content: attr(data-placeholder);
 }
 
 .active{
-    background-color: green;
+    background-color:  wheat;
 }
 
 li{
-    list-style-type: none;
+
 }
