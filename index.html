@@ -23,12 +23,13 @@
     <div class="main-container">
         
         <div class="main">
-            <div class="left-section">
+            <div class="left-section" id="button-container">
                 <div class="sub-heading-left section" >
-                    <span><button class="add-note btn">Create/Save Note</button></span>
-             </div>
+                    <button class="add-note btn">Create/Save Note</button>
+                </div>
              <hr>
              <div class="notes">
+                <button class="btn toggle">Hide Notes</button>
                 <ul id="noteUL">
             
                 </ul>
@@ -51,7 +52,9 @@
                 
                     <button class="fontStyle btn" onclick="document.execCommand( 'underline',false,null)"><img src="images/underline.png" alt="underline-btn" class="btn-img">
                     </button>
-                    <button class="fontStyle btn"><img src="images/copy.png" alt="copy-btn" class="btn-img"></button>
+
+                    <button class="fontStyle btn" id="copy" onclick="document.execCommand( 'copy',false,null)"><img src="images/copy.png" alt="copy-btn" class="btn-img">
+                    </button>
                   </div>
 
             </div>

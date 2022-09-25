@@ -1,7 +1,3 @@
-
-
-
-
 // Selecting main text input area
 const ele = document.querySelector(".text-content")
 
@@ -25,6 +21,7 @@ noteAdder.addEventListener("click", addNote)
 
 // note addition processing
 function addNote() {
+  let noteFiles
     // ensuring the text area isn't empty
   if (ele.innerHTML) {
 
@@ -60,7 +57,7 @@ function addNote() {
             activeNote = noteIndex-1
 
             // Grabbing all the noteFiles so that we can remove the .active class and add .active class appropriately
-            let noteFiles = document.querySelectorAll('.noteFile')
+            noteFiles = document.querySelectorAll('.noteFile')
             // Checking if the index matches the file number to give it an active class if so....
             noteFiles.forEach((item, index) =>  (index!=activeNote) ? item.classList.remove('active'): item.classList.add('active'))
     })
@@ -73,5 +70,61 @@ function addNote() {
     }
 
     ele.innerHTML = ""
+
+    // Deselecting the active highlighted note file when creating a new note
+    noteFiles = document.querySelectorAll('.noteFile')
+    noteFiles.forEach(item => item.classList.remove('active'))
   }
 }
+
+
+// Copy functionality
+
+function copyToClipboard(text) {
+  if (window.clipboardData && window.clipboardData.setData) {
+      // IE specific code path to prevent textarea being shown while dialog is visible.
+      return clipboardData.setData("Text", text); 
+
+  } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+      var textarea = document.createElement("textarea");
+      textarea.textContent = text;
+      textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+          return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+      } catch (ex) {
+          console.warn("Copy to clipboard failed.", ex);
+          return false;
+      } finally {
+          document.body.removeChild(textarea);
+      }
+  }
+}
+
+document.querySelector("#copy").onclick = function() {
+  var result = copyToClipboard(ele.textContent);
+  console.log("copied?", result);
+};
+
+
+
+// Collapsible menu 
+
+const noteFiles = document.querySelector("#noteUL")
+const toggleBtn = document.querySelector(".toggle")
+let collapsed = false
+
+toggleBtn.addEventListener('click', () => {
+  collapsed = !collapsed
+  if (collapsed){
+    noteFiles.style.display = "none"
+    toggleBtn.innerHTML = "Show Notes"
+  }
+  else{
+    noteFiles.style.display = "block"
+    toggleBtn.innerHTML = "Hide Notes"
+  }
+})
+
+
