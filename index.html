@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +16,16 @@
 
     <header>
         <h1>Notepedia</h1>
+        <hr>
     </header>
 
-    <hr>
-    
+  
     <div class="main-container">
         
         <div class="main">
             <div class="left-section">
                 <div class="sub-heading-left section" >
-                    <p >Create/Save Note</p> <span><button class="add-note btn">+</button></span>
+                    <span><button class="add-note btn">Create/Save Note</button></span>
              </div>
              <hr>
              <div class="notes">
@@ -42,14 +43,15 @@
                 <div contenteditable="true" class="text-content" data-placeholder=""></div>
 
                   <div class="btn-class">
-                    <button class="fontStyle" onclick="document.execCommand( 'italic',false,null)"><i>I</i>
+                    <button class="fontStyle btn" onclick="document.execCommand( 'italic',false,null)"><img src="images/italic.png" alt="italic-btn" class="btn-img">
                     </button>
                 
-                    <button class="fontStyle" onclick="document.execCommand( 'bold',false,null)"><b>B</b>
+                    <button class="fontStyle btn" onclick="document.execCommand( 'bold',false,null)"><img src="images/bold.png" alt="bold-btn" class="btn-img">
                     </button>
                 
-                    <button class="fontStyle" onclick="document.execCommand( 'underline',false,null)"><u>U</u>
+                    <button class="fontStyle btn" onclick="document.execCommand( 'underline',false,null)"><img src="images/underline.png" alt="underline-btn" class="btn-img">
                     </button>
+                    <button class="fontStyle btn"><img src="images/copy.png" alt="copy-btn" class="btn-img"></button>
                   </div>
 
             </div>
