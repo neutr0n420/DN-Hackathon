@@ -32,7 +32,7 @@ header{
     margin: none auto;
 }
 .right-section{
-    min-width: 70%;
+    width: 70%;
     margin: 0 30px;
 }
 
