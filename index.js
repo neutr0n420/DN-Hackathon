@@ -72,7 +72,7 @@ function addNote() {
             newCreated = false
 
             // The global variable is set so that we can edit the existing noteFile value in the array index where it exists
-            activeNote = noteIndex -1
+            activeNote = noteIndex-1
 
             // Grabbing all the noteFiles so that we can remove the .active class and add .active class appropriately
             let noteFiles = document.querySelectorAll('.noteFile')
