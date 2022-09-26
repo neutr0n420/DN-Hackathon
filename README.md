@@ -2,7 +2,7 @@
 ## Introduction
  A one stop solution for all your notes - Notepedia is a note-taking application that is rich with features.
  
- [Check it out !] (https://notepedia.netlify.app/)
+ [Check it out !](https://notepedia.netlify.app/)
 
 ## Features 
 
