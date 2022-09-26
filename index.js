@@ -105,7 +105,12 @@ function copyToClipboard(text) {
 document.querySelector("#copy").onclick = function() {
   var result = copyToClipboard(ele.textContent);
   console.log("copied?", result);
-  window.alert("Text has been copied")
+  if (ele.textContent){
+    window.alert("Text has been copied")
+  }
+  else{
+    window.alert("There is no text to copy")
+  }
 };
 
 
