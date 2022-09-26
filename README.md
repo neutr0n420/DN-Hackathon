@@ -27,7 +27,7 @@
 
 [Abu-Lut](https://github.com/Abu-Lut)
 
-[neutr0n420](https://github.com/neutro0n420)
+[neutr0n420](https://github.com/neutr0n420)
 
 [Notsaumitra](https://github.com/Notsaumitra)
 
