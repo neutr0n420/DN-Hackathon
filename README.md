@@ -1,29 +1,31 @@
-# Notepedia
+# Notepedia 
 ## Introduction
- A one stop solution for all your notes.
- We created the note taking app name Notepedia which have the following feactures in it 
+ A one stop solution for all your notes - Notepedia is a note-taking application that is rich with features.
+ 
+ [Check it out !] (https://notepedia.netlify.app/)
 
 ## Features 
 
-1. Bold Text
-2. Italic Text
+1. Bolden Text
+2. Italicize Text
 3. Underline Text
-4. Copy the Note
+4. Copy Note 
 5. Responsive Design
-6. Well Documented Code
 
 ## Tech Stack
- We made the whole project in pure HTML, CSS and Javascirpt.
-
+ The project was completely made with HTML, CSS & JavaScript.
+ 
 ## Challenges we ran into
-- Adding functionalities into the project
-- While making it Responsive
+
+- Implementing file saving feature 
+- Tracking whether current file is a new file or existing file
+- Implementing responsiveness with collapsible menus etc...
 
 ## Future plans
-- To incorporate the delete button in the application
-- Save these notes on google drive/notion
+- Incorporate a delete feature 
+- Save notes to google drive/notion
 
-## Team-mates 
+## Team Members
 
 [Abu-Lut](https://github.com/Abu-Lut)
 
