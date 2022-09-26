@@ -1,4 +1,4 @@
-# Notepedia 
+# Notepedia 📝
 ## Introduction
  A one stop solution for all your notes - Notepedia is a note-taking application that is rich with features.
  
